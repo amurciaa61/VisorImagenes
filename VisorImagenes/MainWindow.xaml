@@ -5,8 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Visor de imágenes" Height="600" Width="700" 
+        MinHeight="600"
+        MinWidth="700">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Bottom"
+                   Background="#ADD8E6"
+                   Margin="10,15,10,11">
+            <TextBlock DockPanel.Dock="Left"
+                       Text="Nº de imágenes: 10"
+                       Padding="3,17" 
+                       FontSize="21"/>
+            <TextBlock DockPanel.Dock="Right"  Text="Diseñado por Javier Catalá "
+                       Padding="3,17"
+                       FontSize="21" />
+            <TextBlock />
+        </DockPanel>
+        <Border DockPanel.Dock="Right"
+                BorderBrush="Black"
+                BorderThickness="2"
+                CornerRadius="5"
+                Margin="10"
+                Padding="1"
+                Background="#90EE90">
+            <DockPanel Background="#90EE90">
+                <DockPanel DockPanel.Dock="top"
+                           LastChildFill="False">
+                    <Button DockPanel.Dock="Top"
+                            Content="Añadir imagen"
+                            Margin="4" />
+                    <Button DockPanel.Dock="Top"
+                            Content="Eliminar imagen"
+                            Margin="4" 
+                            Padding="10,0"/>
+                    <Button DockPanel.Dock="Top"
+                            Content="Eliminar todas"
+                            Margin="4" />
+                </DockPanel>
+                <DockPanel DockPanel.Dock="Bottom" 
+                           LastChildFill="False">
+                    <Button DockPanel.Dock="Bottom"
+                            Content="Recortar"
+                            Margin="4" />
+                    <Button DockPanel.Dock="Bottom"
+                            Content="Rotar"
+                            Margin="4" />
+
+                </DockPanel>
+                <TextBlock />
+            </DockPanel>
+        </Border>
+        <TextBlock DockPanel.Dock="Top"
+                   Text="Visor de imágenes"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   FontSize="40"
+                   FontWeight="DemiBold" />
+        <WrapPanel>
+            <Image 
+                Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg" 
+                   Width="130"/>
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
+        </WrapPanel>
+    </DockPanel>
 </Window>
