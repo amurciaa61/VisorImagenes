@@ -10,15 +10,17 @@
         MinWidth="700">
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom"
-                   Background="#ADD8E6"
+                   Background="LightBlue"
                    Margin="10,15,10,11">
             <TextBlock DockPanel.Dock="Left"
                        Text="Nº de imágenes: 10"
                        Padding="3,17" 
-                       FontSize="21"/>
+                       FontSize="20"
+                      FontFamily="Rubik"/>
             <TextBlock DockPanel.Dock="Right"  Text="Diseñado por Javier Catalá "
                        Padding="3,17"
-                       FontSize="21" />
+                       FontSize="20"
+                       FontFamily="Rubik"/>
             <TextBlock />
         </DockPanel>
         <Border DockPanel.Dock="Right"
@@ -27,8 +29,8 @@
                 CornerRadius="5"
                 Margin="10"
                 Padding="1"
-                Background="#90EE90">
-            <DockPanel Background="#90EE90">
+                Background="LightGreen">
+            <DockPanel Background="LightGreen">
                 <DockPanel DockPanel.Dock="top"
                            LastChildFill="False">
                     <Button DockPanel.Dock="Top"
@@ -60,7 +62,7 @@
                    Margin="10"
                    HorizontalAlignment="Center"
                    FontSize="40"
-                   FontWeight="DemiBold" />
+                   FontFamily="Rubik" />
         <WrapPanel>
             <Image 
                 Source="Imagenes/episodioIV.jpg"
