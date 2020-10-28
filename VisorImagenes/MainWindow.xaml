@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
-        Title="Visor de imágenes" Height="600" Width="700" 
+        Title="Visor de imágenes"
+        Height="600"
+        Width="700"
         MinHeight="600"
         MinWidth="700">
     <DockPanel>
@@ -14,13 +16,14 @@
                    Margin="10,15,10,11">
             <TextBlock DockPanel.Dock="Left"
                        Text="Nº de imágenes: 10"
-                       Padding="3,17" 
-                       FontSize="20"
-                      FontFamily="Rubik"/>
-            <TextBlock DockPanel.Dock="Right"  Text="Diseñado por Javier Catalá "
                        Padding="3,17"
                        FontSize="20"
-                       FontFamily="Rubik"/>
+                       FontFamily="Rubik" />
+            <TextBlock DockPanel.Dock="Right"
+                       Text="Diseñado por Javier Catalá "
+                       Padding="3,17"
+                       FontSize="20"
+                       FontFamily="Rubik" />
             <TextBlock />
         </DockPanel>
         <Border DockPanel.Dock="Right"
@@ -38,13 +41,13 @@
                             Margin="4" />
                     <Button DockPanel.Dock="Top"
                             Content="Eliminar imagen"
-                            Margin="4" 
-                            Padding="10,0"/>
+                            Margin="4"
+                            Padding="10,0" />
                     <Button DockPanel.Dock="Top"
                             Content="Eliminar todas"
                             Margin="4" />
                 </DockPanel>
-                <DockPanel DockPanel.Dock="Bottom" 
+                <DockPanel DockPanel.Dock="Bottom"
                            LastChildFill="False">
                     <Button DockPanel.Dock="Bottom"
                             Content="Recortar"
@@ -52,7 +55,6 @@
                     <Button DockPanel.Dock="Bottom"
                             Content="Rotar"
                             Margin="4" />
-
                 </DockPanel>
                 <TextBlock />
             </DockPanel>
@@ -64,11 +66,10 @@
                    FontSize="40"
                    FontFamily="Rubik" />
         <WrapPanel>
-            <Image 
-                Source="Imagenes/episodioIV.jpg"
+            <Image Source="Imagenes/episodioIV.jpg"
                    Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg" 
-                   Width="130"/>
+            <Image Source="Imagenes/episodioIV.jpg"
+                   Width="130" />
             <Image Source="Imagenes/episodioIV.jpg"
                    Width="130" />
             <Image Source="Imagenes/episodioIV.jpg"
