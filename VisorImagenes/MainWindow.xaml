@@ -10,21 +10,47 @@
         Width="700"
         MinHeight="600"
         MinWidth="700">
+    <Window.Resources>
+        <!-- Estilo para las imagenes -->
+        <Style TargetType="Image">
+            <Setter Property="Width"
+                    Value="135" />
+        </Style>
+        <!-- Estilo para los TextBlock -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily"
+                    Value="Rubik" />
+            <Setter Property="FontSize"
+                    Value="40" />
+        </Style>
+        <!-- Estilo para los TextBlock del bottom -->
+        <Style TargetType="{x:Type TextBlock}"
+               x:Key="textoBottom"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Padding"
+                    Value="3,17" />
+        </Style>
+        <!-- Estilo para todos los Botones-->
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin"
+                    Value="4" />
+            <Setter Property="Width"
+                    Value="105" />
+        </Style>
+    </Window.Resources>
     <DockPanel>
         <DockPanel LastChildFill="False"
                    DockPanel.Dock="Bottom"
                    Background="LightBlue"
                    Margin="10,15,10,11">
-            <TextBlock DockPanel.Dock="Left"
-                       Text="Nº de imágenes: 10"
-                       Padding="3,17"
-                       FontSize="20"
-                       FontFamily="Rubik" />
-            <TextBlock DockPanel.Dock="Right"
-                       Text="Diseñado por Javier Catalá "
-                       Padding="3,17"
-                       FontSize="20"
-                       FontFamily="Rubik" />
+            <TextBlock Style="{StaticResource textoBottom}"
+                       DockPanel.Dock="Left"
+                       Text="Nº de imágenes: 10" />
+            <TextBlock Style="{StaticResource textoBottom}"
+                       DockPanel.Dock="Right"
+                       Text="Diseñado por Javier Catalá " />
         </DockPanel>
         <Border DockPanel.Dock="Right"
                 BorderBrush="Black"
@@ -38,50 +64,35 @@
                 <DockPanel DockPanel.Dock="top"
                            LastChildFill="False">
                     <Button DockPanel.Dock="Top"
-                            Content="Añadir imagen"
-                            Margin="4" />
+                            Content="Añadir imagen" />
                     <Button DockPanel.Dock="Top"
                             Content="Eliminar imagen"
-                            Margin="4"
-                            Padding="10,0" />
+                             />
                     <Button DockPanel.Dock="Top"
-                            Content="Eliminar todas"
-                            Margin="4" />
+                            Content="Eliminar todas" />
                 </DockPanel>
                 <DockPanel DockPanel.Dock="Bottom"
                            LastChildFill="False">
                     <Button DockPanel.Dock="Bottom"
-                            Content="Recortar"
-                            Margin="4" />
+                            Content="Recortar" />
                     <Button DockPanel.Dock="Bottom"
-                            Content="Rotar"
-                            Margin="4" />
+                            Content="Rotar" />
                 </DockPanel>
             </DockPanel>
         </Border>
         <TextBlock DockPanel.Dock="Top"
                    Text="Visor de imágenes"
                    Margin="10"
-                   HorizontalAlignment="Center"
-                   FontSize="40"
-                   FontFamily="Rubik" />
+                   HorizontalAlignment="Center" />
         <WrapPanel>
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
-            <Image Source="Imagenes/episodioIV.jpg"
-                   Width="130" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
+            <Image Source="Imagenes/episodioIV.jpg" />
         </WrapPanel>
     </DockPanel>
 </Window>
